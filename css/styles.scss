@@ -50,8 +50,6 @@ li{
     display: flex;
 }
 
-@-webkit-keyframes animate-svg-stroke-1{0%{stroke-dashoffset:2449.34912109375px;stroke-dasharray:2449.34912109375px}100%{stroke-dashoffset:0;stroke-dasharray:2449.34912109375px}}@keyframes animate-svg-stroke-1{0%{stroke-dashoffset:2449.34912109375px;stroke-dasharray:2449.34912109375px}100%{stroke-dashoffset:0;stroke-dasharray:2449.34912109375px}}.svg-elem-1{-webkit-animation:animate-svg-stroke-1 3s ease-in-out 1s infinite both, pause-animation 2s ease-in-out 3s infinite;}@keyframes pause-animation{0%{opacity:1;}100%{opacity:1;}}@-webkit-keyframes animate-svg-stroke-2{0%{stroke-dashoffset:1960.9385986328125px;stroke-dasharray:1960.9385986328125px}100%{stroke-dashoffset:0;stroke-dasharray:1960.9385986328125px}}@keyframes animate-svg-stroke-2{0%{stroke-dashoffset:1960.9385986328125px;stroke-dasharray:1960.9385986328125px}100%{stroke-dashoffset:0;stroke-dasharray:1960.9385986328125px}}.svg-elem-2{-webkit-animation:animate-svg-stroke-2 3s ease-in-out 1.12s infinite both, pause-animation 2s ease-in-out 3s infinite;}@keyframes animate-svg-stroke-3{0%{stroke-dashoffset:1944.684814453125px;stroke-dasharray:1944.684814453125px}100%{stroke-dashoffset:0;stroke-dasharray:1944.684814453125px}}@keyframes animate-svg-stroke-3{0%{stroke-dashoffset:1944.684814453125px;stroke-dasharray:1944.684814453125px}100%{stroke-dashoffset:0;stroke-dasharray:1944.684814453125px}}.svg-elem-3{-webkit-animation:animate-svg-stroke-3 3s ease-in-out 1.24s infinite both, pause-animation 2s ease-in-out 3s infinite;}@-webkit-keyframes animate-svg-stroke-4{0%{stroke-dashoffset:1653.4039306640625px;stroke-dasharray:1653.4039306640625px}100%{stroke-dashoffset:0;stroke-dasharray:1653.4039306640625px}}@keyframes animate-svg-stroke-4{0%{stroke-dashoffset:1653.4039306640625px;stroke-dasharray:1653.4039306640625px}100%{stroke-dashoffset:0;stroke-dasharray:1653.4039306640625px}}.svg-elem-4{-webkit-animation:animate-svg-stroke-4 3s ease-in-out 1.36s infinite both, pause-animation 2s ease-in-out 3s infinite;}@-webkit-keyframes animate-svg-stroke-5{0%{stroke-dashoffset:1838.7987060546875px;stroke-dasharray:1838.7987060546875px}100%{stroke-dashoffset:0;stroke-dasharray:1838.7987060546875px}}@keyframes animate-svg-stroke-5{0%{stroke-dashoffset:1838.7987060546875px;stroke-dasharray:1838.7987060546875px}100%{stroke-dashoffset:0;stroke-dasharray:1838.7987060546875px}}.svg-elem-5{-webkit-animation:animate-svg-stroke-5 3s ease-in-out 1.48s infinite both, pause-animation 2s ease-in-out 3s infinite;}
-
 // nav styling
 
 nav{
@@ -69,6 +67,7 @@ nav{
         margin: 20px 0;
 
         .list-item{
+            height: 110px;
             display: flex;
             flex-direction: column;
             gap: 50px;
@@ -77,6 +76,7 @@ nav{
             cursor: pointer;
             color: white;
             transition: background 0.3s ease, color 0.3s ease;
+            
 
             h3{
               font-weight: $fwReg;  
@@ -87,6 +87,7 @@ nav{
                 color: black;
             }
         }
+
 
         .adobe{
             background-color: white;
@@ -125,6 +126,7 @@ nav{
     width: 100%;
     padding: 20px 30px;
     margin-left: 230px;
+    overflow-x: hidden;
 
     .home{
         background-color: $deepBlue;
@@ -272,25 +274,17 @@ nav{
         position: relative;
 
         .counter{
-            position: absolute;
             font-size: 1rem;
-            top: 13vh;
             padding: 2px 12px;
             border-radius: 15px;
             border: 1px solid white;
-        }
-
-        .two{
-            top: 77vh;
-        }
-
-        .three{
-            top: 159vh;
+            margin-top: 70px;
         }
 
         .quote{
             display: flex;
             margin-bottom: 150px;
+            align-items: flex-start;
 
             &:last-child{
                 margin-bottom: none;
