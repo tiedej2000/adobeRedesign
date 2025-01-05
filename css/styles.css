@@ -68,7 +68,7 @@ nav .navbar .home {
   background: linear-gradient(220.55deg, #3793FF 0%, #0017E4 100%);
 }
 nav .navbar .products {
-  background: linear-gradient(220.55deg, #FF0000 0%, #470000 100%);
+  background: linear-gradient(220.55deg, #FF896D 0%, #D02020 100%);
 }
 nav .navbar .solutions {
   background: linear-gradient(220.55deg, #FFC328 0%, #E20000 100%);
@@ -90,7 +90,7 @@ nav .navbar .support {
   overflow-x: hidden;
 }
 .sub-container .home {
-  background-color: #0017E4;
+  background-color: hsl(234, 100%, 45%);
 }
 
 .card {
@@ -169,7 +169,7 @@ nav .navbar .support {
   font-weight: 200;
 }
 #home-section .home h2 {
-  font-size: 8rem;
+  font-size: 10rem;
   font-weight: 500;
 }
 #home-section .about {
@@ -193,7 +193,7 @@ nav .navbar .support {
   text-align: right;
   padding-right: 60px;
   padding-top: 20px;
-  color: #0017E4;
+  color: hsl(234, 100%, 45%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -210,11 +210,11 @@ nav .navbar .support {
 #home-section .about .three {
   padding-right: 60px;
   padding-top: 20px;
-  color: #0017E4;
+  color: hsl(234, 100%, 45%);
   border: none;
 }
 #home-section .quotes {
-  background: #0017E4;
+  background: hsl(234, 100%, 45%);
   border: none;
   font-size: 7rem;
   position: relative;
@@ -243,4 +243,154 @@ nav .navbar .support {
   border-bottom: 1px solid white;
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
+}
+#home-section .collabs {
+  color: black;
+  font-size: 2.8rem;
+  font-weight: 700;
+  width: 100%;
+}
+#home-section .collabs .top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 40px;
+}
+#home-section .collabs .top .quote {
+  max-width: 700px;
+  font-weight: 500;
+}
+#home-section .collabs .top .title {
+  max-width: 300px;
+  color: hsl(234, 100%, 45%);
+}
+#home-section .collabs .top .client {
+  color: hsl(234, 100%, 45%);
+}
+#home-section .collabs .top .logo-client {
+  width: 100px;
+}
+#home-section .collabs .top .logo-client img {
+  width: 100%;
+}
+#home-section .collabs .bottom {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#home-section .collabs .bottom li {
+  height: 35px;
+}
+#home-section .collabs .bottom .attributes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  font-weight: 500;
+}
+#home-section .collabs .bottom .attributes .attribute {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 25px;
+  border: 1px solid black;
+  font-size: 1.2rem;
+}
+#home-section .collabs .bottom .attributes .attribute-role {
+  display: grid;
+  place-content: center;
+  font-size: 1.1rem;
+  max-width: 155px;
+  text-align: right;
+}
+#home-section .collabs .bottom .categories {
+  display: flex;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#home-section .collabs .bottom .categories li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+.scrollbar {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  color: hsl(234, 100%, 45%);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.scrollbar .marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.scrollbar .marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 90s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+#products-section {
+  color: white;
+}
+#products-section .products {
+  border: none;
+  background-color: #D02020;
+  margin-bottom: 20px;
+}
+#products-section .products h3 {
+  font-size: 4.5rem;
+  margin-bottom: 250px;
+  font-weight: 200;
+}
+#products-section .products h2 {
+  font-size: 10rem;
+  font-weight: 500;
+}
+#products-section .title {
+  display: flex;
+  flex-wrap: wrap;
+}
+#products-section .title h1 {
+  color: black;
+  font-size: 10.8rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 40px 80px;
+  border-radius: 120px;
+  margin-bottom: 20px;
+}
+#products-section .title .adobe {
+  border: dotted;
+}
+#products-section .title .innovative {
+  background-color: #D02020;
+  border: transparent;
+}
+#products-section .title .products {
+  background-color: black;
+  color: #D02020;
 }/*# sourceMappingURL=styles.css.map */

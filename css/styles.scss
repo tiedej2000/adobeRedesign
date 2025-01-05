@@ -1,9 +1,10 @@
 // colors
 
 $darkRed: #FF0000;
+$softRed: #D02020;
 $brightCyan: hsl(190, 100%, 60%);
 $warmYellow: hsl(51, 100%, 65%);
-$deepBlue: #0017E4;
+$deepBlue: hsl(234, 100%, 45%);
 
 
 $softLightGray: hsl(0, 0%, 96%);
@@ -95,15 +96,15 @@ nav{
         }
 
         .home{
-            background: linear-gradient(220.55deg, #3793FF 0%, #0017E4 100%);;
+            background: linear-gradient(220.55deg, #3793FF 0%, #0017E4 100%);
         }
 
         .products{
-            background: linear-gradient(220.55deg, #FF0000 0%, #470000 100%);;
+            background:  linear-gradient(220.55deg, #FF896D 0%, #D02020 100%);
         }
 
         .solutions{
-            background: linear-gradient(220.55deg, #FFC328 0%, #E20000 100%);;
+            background: linear-gradient(220.55deg, #FFC328 0%, #E20000 100%);
         }
 
         .cc{
@@ -152,7 +153,7 @@ nav{
     padding: 0 50px;
     border-radius: 20px;
     color: white;
-    margin-bottom: $mb;    
+    margin-bottom: $mb;
 }
 
 .section{
@@ -217,7 +218,7 @@ nav{
 
         }
         h2{
-            font-size: 8rem;
+            font-size: 10rem;
             font-weight: $fwReg;
 
         }
@@ -302,6 +303,183 @@ nav{
             }
         }
     }
+
+    .collabs{
+        color: black;
+        font-size: 2.8rem;
+        font-weight: $fwBold;
+        width: 100%;
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            padding-bottom: 40px;
+
+            .quote{
+                max-width: 700px;
+                font-weight: $fwReg;
+            }
+
+            .title{
+                max-width: 300px;
+                color: $deepBlue;
+            }
+
+            .client{
+                color: $deepBlue;
+            }
+
+            .logo-client{
+                width: 100px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .bottom{
+            width: 100%;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            li{
+                height: 35px;
+            }
+
+
+            .attributes{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 700px;
+                font-weight: $fwReg;
+
+                .attribute{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 20px;
+                    border-radius: 25px;
+                    border: 1px solid black;   
+                    font-size: 1.2rem;
+                }
+
+                .attribute-role{
+                    display: grid;
+                    place-content: center;
+                    font-size: 1.1rem;
+                    max-width: 155px;
+                    text-align: right;
+                }
+            }
+
+            .categories{
+                display: flex;
+                gap: 10px;
+                font-size: 1.2rem;
+                font-weight: $fwBold;
+
+                li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 20px;
+                    border-radius: 25px;
+                    border: 1px solid black;
+                }
+            }
+        }
+    }
     
 }
+
+// scrollbar
+
+.scrollbar {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    color: $deepBlue;
+    font-size: 2.2rem;
+    font-weight: $fwBold;
+    margin-bottom: $mb;
+    
+    .marquee {
+        margin: 0 auto;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .marquee span {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 90s linear infinite;
+    }
+}
+
+@keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+}
+
+#products-section{
+    color: white;
+    .products{
+        border: none;
+        background-color: $softRed;
+        margin-bottom: $mb;
+        h3{
+            font-size: 4.5rem;
+            margin-bottom: 250px;
+            font-weight: $fwLight;
+
+        }
+        h2{
+            font-size: 10rem;
+            font-weight: $fwReg;
+
+        }
+    }
+
+    .title{
+        display: flex;
+        flex-wrap: wrap;
+        h1{
+            color: black;
+            font-size: 10.8rem;
+            font-weight: $fwLight;
+            text-transform: uppercase;
+            border: 1px solid black;
+            padding: 40px 80px;
+            border-radius: 120px;
+            margin-bottom: $mb;
+        }
+
+        .adobe{
+            border: dotted;
+        }
+
+        .innovative{
+            background-color: $softRed;
+            border: transparent;
+        }
+
+        .products{
+            background-color: black;
+            color: $softRed;
+        }
+    }
+}
+
+
 
