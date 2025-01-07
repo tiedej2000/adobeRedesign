@@ -465,6 +465,7 @@ nav .navbar .support {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 30px;
   width: 24%;
   margin: 0 5px;
@@ -500,9 +501,10 @@ nav .navbar .support {
   transform: scale(1.8);
 }
 #products-section .product-grid .product-item p {
-  padding: 0 40px;
+  padding: 0 30px;
   margin-bottom: 20px;
   color: #5B5B5B;
+  min-height: 150px;
 }
 #products-section .product-grid .product-item button {
   width: 100%;
@@ -516,23 +518,109 @@ nav .navbar .support {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-#products-section .product-grid .product-item .download {
-  background-color: hsl(212, 100%, 10%);
-  color: white;
-  border: 1px solid transparent;
+#products-section .product-grid .product-item .buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
 }
-#products-section .product-grid .product-item .download:hover {
-  background-color: transparent;
-  color: hsl(212, 100%, 10%);
-  border: 1px solid hsl(212, 100%, 10%);
+#products-section .product-grid .product-item .buttons::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: -30%;
+  height: 1px;
+  background: black;
 }
-#products-section .product-grid .product-item .creative-cloud {
+#products-section .product-grid .product-item .buttons button {
   background-color: transparent;
   border: 1px solid black;
   margin-bottom: 0;
 }
-#products-section .product-grid .product-item .creative-cloud:hover {
-  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+#products-section .product-grid .product-item .buttons button:hover {
+  background-color: transparent;
+}
+#products-section .product-grid .product-item .buttons .creative-cloud {
+  background-color: transparent;
+  border: 1px solid black;
+}
+#products-section .product-grid .product-item .buttons .download-ps {
+  background-color: hsl(212, 100%, 10%);
   color: white;
   border: 1px solid transparent;
+  margin-bottom: 10px;
+}
+#products-section .product-grid .product-item .buttons .download-ps:hover {
+  color: hsl(212, 100%, 10%);
+  border-color: hsl(212, 100%, 10%);
+}
+#products-section .product-grid .product-item .buttons .download-ai {
+  background-color: hsl(0, 100%, 9%);
+  color: white;
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+}
+#products-section .product-grid .product-item .buttons .download-ai:hover {
+  color: hsl(0, 100%, 9%);
+  border-color: hsl(0, 100%, 9%);
+}
+#products-section .product-grid .product-item .buttons .download-indesign {
+  background-color: hsl(335, 95%, 15%);
+  color: white;
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+}
+#products-section .product-grid .product-item .buttons .download-indesign:hover {
+  color: hsl(335, 95%, 15%);
+  border-color: hsl(335, 95%, 15%);
+}
+#products-section .product-grid .product-item .buttons .download-ae {
+  background-color: hsl(240, 100%, 18%);
+  color: white;
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+}
+#products-section .product-grid .product-item .buttons .download-ae:hover {
+  color: hsl(240, 100%, 18%);
+  border-color: hsl(240, 100%, 18%);
+}
+#products-section .product-grid .product-item .buttons .download-premiere {
+  background-color: hsl(240, 100%, 18%);
+  color: white;
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+}
+#products-section .product-grid .product-item .buttons .download-premiere:hover {
+  color: hsl(240, 100%, 18%);
+  border-color: hsl(240, 100%, 18%);
+}
+#products-section .product-grid .product-item .buttons .download-acrobat {
+  background-color: hsl(1, 100%, 49%);
+  color: white;
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+}
+#products-section .product-grid .product-item .buttons .download-acrobat:hover {
+  color: hsl(1, 100%, 49%);
+  border-color: hsl(1, 100%, 49%);
+}
+#products-section .product-grid .product-item .buttons .download-dreamweaver {
+  background-color: hsl(314, 97%, 14%);
+  color: white;
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+}
+#products-section .product-grid .product-item .buttons .download-dreamweaver:hover {
+  color: hsl(314, 97%, 14%);
+  border-color: hsl(314, 97%, 14%);
+}
+#products-section .product-grid .product-item .buttons .download-stock {
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+}
+#products-section .product-grid .product-item .buttons .download-stock:hover {
+  color: hsl(0, 0%, 0%);
+  border-color: hsl(0, 0%, 0%);
 }/*# sourceMappingURL=styles.css.map */

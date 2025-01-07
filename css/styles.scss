@@ -560,6 +560,7 @@ nav{
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-between;
             padding: 30px;
             width: 24%;
             margin: 0 5px;
@@ -600,9 +601,10 @@ nav{
             }
 
             p{
-                padding: 0 40px;
+                padding: 0 30px;
                 margin-bottom: 20px;
                 color: #5B5B5B;
+                min-height: 150px;
             }
 
             button{
@@ -618,37 +620,60 @@ nav{
                 transition: all 0.3s ease;
             }
 
-            .download{
-                background-color: hsl(212, 100%, 10%);
-                color: white;
-                border: 1px solid transparent;
-                &:hover{
-                    background-color: transparent;
-                    color:hsl(212, 100%, 10%);
-                    border: 1px solid hsl(212, 100%, 10%);
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                position: relative;
+              
+                &::after {
+                  content: '';
+                  position: absolute;
+                  width: 100%;
+                  top: -30%;
+                  height: 1px;
+                  background: black;
                 }
-            }
-
-            .creative-cloud{
-                background-color: transparent;
-                border: 1px solid black;
-                margin-bottom: 0;
-
-                &:hover{
-                    background: linear-gradient(
-                    to right, 
-                    red, 
-                    orange, 
-                    yellow, 
-                    green, 
-                    blue, 
-                    indigo, 
-                    violet
-                    );
+              
+                button {
+                  background-color: transparent;
+                  border: 1px solid black;
+                  margin-bottom: 0;
+              
+                  &:hover {
+                    background-color: transparent;
+                  }
+                }
+              
+                .creative-cloud {
+                  background-color: transparent;
+                  border: 1px solid black;
+                }
+              
+                @each $name, $color in (
+                  "download-ps": hsl(212, 100%, 10%),
+                  "download-ai": hsl(0, 100%, 9%),
+                  "download-indesign": hsl(335, 95%, 15%),
+                  "download-ae": hsl(240, 100%, 18%),
+                  "download-premiere": hsl(240, 100%, 18%),
+                  "download-acrobat": hsl(1, 100%, 49%),
+                  "download-dreamweaver": hsl(314, 97%, 14%),
+                  "download-stock": hsl(0, 0%, 0%)
+                ) {
+                  .#{$name} {
+                    background-color: $color;
                     color: white;
                     border: 1px solid transparent;
+                    margin-bottom: 10px;
+              
+                    &:hover {
+                      color: $color;
+                      border-color: $color;
+                    }
+                  }
                 }
-            }
+              }
+              
         }
     }
     
