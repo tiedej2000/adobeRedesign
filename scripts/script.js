@@ -1,3 +1,4 @@
+// observer
 document.addEventListener('DOMContentLoaded', () => {
     const homeSection = document.querySelector('#home-section');
     const adobeListItem = document.querySelector('.list-item.adobe');
@@ -45,3 +46,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     observerHome.observe(homeSection);
 });
+
+// event triggers for product section
+
+const desktopMobiles = document.querySelectorAll('.desktop-mobile');
+const hoverElements = document.querySelectorAll('.desktop-mobile-hover');
+
+desktopMobiles.forEach((desktopMobile, index) => {
+    const hoverElement = hoverElements[index]; 
+
+    desktopMobile.addEventListener('mouseover', () => {
+        hoverElement.classList.add('active');
+    });
+
+    desktopMobile.addEventListener('mouseout', () => {
+        hoverElement.classList.remove('active');
+    });
+});
+
+const desktops = document.querySelectorAll('.desktop');
+const desktopHoverElements = document.querySelectorAll('.desktop-hover');
+
+desktops.forEach((desktop, index) => {
+    const desktopHoverElement = desktopHoverElements[index]; 
+
+    desktop.addEventListener('mouseover', () => {
+        desktopHoverElement.classList.add('active');
+    });
+
+    desktop.addEventListener('mouseout', () => {
+        desktopHoverElement.classList.remove('active');
+    });
+});
+
+

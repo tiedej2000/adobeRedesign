@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264.04 180.3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: AtkinsonHyperlegible-Regular, 'Atkinson Hyperlegible';
+        font-size: 55.84px;
+      }
+
+      .cls-2 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-3 {
+        fill: #5c5c5c;
+      }
+    </style>
+  </defs>
+  <path class="cls-3" d="M264.04,71.57v74.84c0,18.72-15.17,33.89-33.89,33.89H33.89c-18.72,0-33.89-15.17-33.89-33.89v-74.84c0-18.72,15.17-33.89,33.89-33.89h60.7L132.26,0l37.19,37.68h60.7c18.72,0,33.89,15.17,33.89,33.89Z"/>
+  <text class="cls-1" transform="translate(31.43 124.66)"><tspan x="0" y="0">Des</tspan><tspan class="cls-2" x="93.97" y="0">k</tspan><tspan x="120.66" y="0">top</tspan></text>
+</svg>

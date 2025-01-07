@@ -605,6 +605,40 @@ nav{
                 svg{
                     transform: scale(1.8);
                 }
+
+                .desktop-mobile{
+                    position: relative;
+
+                    .desktop-mobile-hover{
+                        position: absolute;
+                        bottom: -1.6vh;
+                        left: 0;
+                        width: 100%;
+                        transform: scale(3.5);
+                        display: none;
+                    }
+
+                    .active.desktop-mobile-hover{
+                        display: block;
+                    }
+                }
+
+                .desktop{
+                    position: relative;
+
+                    .desktop-hover{
+                        position: absolute;
+                        bottom: -3vh;
+                        left: 0;
+                        width: 100%;
+                        transform: scale(1.5);
+                        display: none;
+                    }
+
+                    .active.desktop-hover{
+                        display: block;
+                    }
+                }
             }
 
             p{
